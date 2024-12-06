@@ -14,7 +14,7 @@ const Navbar = () => {
     { path: '/', label: 'Bosh Sahifa' },
     { path: '/skills', label: 'Ko\'nikmalarim' },
     { path: '/projects', label: 'Loyihalar' },
-    { path: '/', label: 'Haqimda' },
+    { path: '/about', label: 'Haqimda' },
   ];
 
   return (
