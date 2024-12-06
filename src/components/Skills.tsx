@@ -10,56 +10,39 @@ const Skills = () => {
     {
       title: "Veb Dizayn",
       skills: [
-        { name: "UI/UX Dizayn", proficiency: 90 },
-        { name: "Responsive Dizayn", proficiency: 95 },
-        { name: "Wireframing", proficiency: 85 },
-        { name: "Foydalanuvchi Tadqiqotlari", proficiency: 80 },
-        { name: "Figma", proficiency: 95 },
-        { name: "Photoshop", proficiency: 90 },
-        { name: "Illustrator", proficiency: 85 }
+        { name: "UI/UX Dizayn", proficiency: 40 },
+        { name: "Responsive Dizayn", proficiency: 100 },
+        { name: "Wireframing", proficiency: 30 },
+        { name: "Figma", proficiency: 70 },
+        { name: "Photoshop", proficiency: 20 },
+        { name: "Illustrator", proficiency: 0 }
       ]
     },
     {
       title: "Frontend",
       skills: [
-        { name: "Javascript", proficiency: 95 },
-        { name: "ReactJS", proficiency: 90 },
-        { name: "CSS3", proficiency: 95 },
+        { name: "Javascript", proficiency: 70 },
+        { name: "ReactJS", proficiency: 70 },
+        { name: "CSS3", proficiency: 90 },
         { name: "Tailwind CSS", proficiency: 90 },
-        { name: "HTML5", proficiency: 95 },
-        { name: "Figma", proficiency: 90 },
-        { name: "Bootstrap", proficiency: 85 },
-        { name: "Git", proficiency: 95 },
-        { name: "Docker", proficiency: 80 }
+        { name: "HTML5", proficiency: 90 },
+        { name: "Bootstrap", proficiency: 80 },
+        { name: "Git", proficiency: 70 },
+        { name: "Docker", proficiency: 10 }
       ]
     },
     {
       title: "Backend",
       skills: [
-        { name: "NodeJs", proficiency: 90 },
-        { name: "PostgreSQL", proficiency: 85 },
-        { name: "ExpressJS", proficiency: 90 },
-        { name: "MySQL", proficiency: 85 },
-        { name: "Python", proficiency: 80 },
-        { name: "Django", proficiency: 85 },
-        { name: "FastAPI", proficiency: 90 },
-        { name: "Docker", proficiency: 85 },
-        { name: "Git", proficiency: 90 }
-      ]
-    },
-    {
-      title: "Soft Skills",
-      skills: [
-        { name: "Effective communication", proficiency: 95 },
-        { name: "Collaboration", proficiency: 90 },
-        { name: "Commitment", proficiency: 95 },
-        { name: "Leadership", proficiency: 90 },
-        { name: "Problem Solving", proficiency: 95 },
-        { name: "Time Management", proficiency: 90 },
-        { name: "Adaptability", proficiency: 95 },
-        { name: "Teamwork", proficiency: 90 }
+        { name: "NodeJs", proficiency: 60 },
+        { name: "PostgreSQL", proficiency: 70 },
+        { name: "ExpressJS", proficiency: 50 },
+        { name: "MySQL", proficiency: 65 },
+        { name: "Python", proficiency: 50 },
+        { name: "FastAPI", proficiency: 50 },
       ]
     }
+  
   ];
 
   const [animation, setAnimation] = useState(false);
@@ -74,19 +57,19 @@ const Skills = () => {
   return (
     <div className="min-h-screen bg-white py-20 px-4 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 text-center">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 text-center animate-fade-in">
           Ko'nikmalarim<span className="text-purple-600">.</span>
         </h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillCategories.map((category, index) => (
-            <div key={index} className="space-y-4">
+            <div key={index} className="space-y-4 animate-slide-up">
               <h2 className="text-xl md:text-2xl font-bold text-center">{category.title}</h2>
               <div className="space-y-2">
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
-                    className="p-3 bg-gray-50 rounded-lg hover:bg-purple-50 transition-colors duration-300"
+                    className="p-3 bg-gray-50 rounded-lg hover:bg-purple-50 transition-colors duration-300 animate-fade-in"
                   >
                     <div className="flex items-center justify-between">
                       <p className="text-gray-700 text-center">{skill.name}</p>
