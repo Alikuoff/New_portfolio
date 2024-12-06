@@ -8,19 +8,19 @@ const Skills = () => {
   const skillCategories: SkillCategory[] = [
     {
       title: "Veb Dizayn",
-      skills: ["UI/UX Dizayn", "Responsive Dizayn", "Wireframing", "Foydalanuvchi Tadqiqotlari"]
+      skills: ["UI/UX Dizayn", "Responsive Dizayn", "Wireframing", "Foydalanuvchi Tadqiqotlari", "Figma", "Photoshop", "Illustrator"]
     },
     {
       title: "Frontend",
-      skills: ["Javascript", "ReactJS", "NextJS", "CSS3"]
+      skills: ["Javascript", "ReactJS", "CSS3", "Tailwind CSS", "HTML5", "Figma", "Bootstrap", "Git", "Docker"]
     },
     {
       title: "Backend",
-      skills: ["NodeJs", "MongoDB", "ExpressJS", "Vercel"]
+      skills: ["NodeJs", "PostgreSQL", "ExpressJS", "MySQL", "Python", "Django", "FastAPI", "Docker", "Git",]
     },
     {
       title: "Soft Skills",
-      skills: ["Effective communication", "Collaboration", "Commitment", "Leadership"]
+      skills: ["Effective communication", "Collaboration", "Commitment", "Leadership", "Problem Solving", "Time Management", "Adaptability", "Teamwork"]
     }
   ];
 
@@ -28,7 +28,7 @@ const Skills = () => {
     <div className="min-h-screen bg-white py-20">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <h1 className="text-6xl md:text-7xl font-bold mb-16">
-          Mahoratlar<span className="text-purple-600">.</span>
+          Ko'nikmalarim<span className="text-purple-600">.</span>
         </h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

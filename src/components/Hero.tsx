@@ -1,3 +1,6 @@
+import profileImage from '../images/me.jpg';
+import { Twitter, Github, Linkedin, Instagram } from 'lucide-react';
+
 const Hero = () => {
   return (
     <div className="min-h-screen pt-20 flex items-center">
@@ -12,15 +15,28 @@ const Hero = () => {
             </h1>
           </div>
           <p className="text-gray-600 text-lg md:text-xl max-w-md">
-            Men O'zbekistondan bo'lgan frontend dasturchiman, sizga foydalanuvchilar uchun yoqimli va chiroyli veb-saytlar yaratishga yordam beraman.
-          </p>
+          Men, Aliqulov Azizjon, texnologiyalar va dasturlash sohasida faoliyat yurituvchi, rivojlanish va innovatsiyaga qiziqadigan mutaxassisman. Zamonaviy texnologiyalar yordamida samarali yechimlar yaratishni va raqamli olamda o'z o'rnimni topishni maqsad qilganman.          </p>
           <div className="flex space-x-4">
             <button className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">
-              Aloqa qilish
+              <a href="tel:+998883146777">Bog'lanish</a>
             </button>
             <button className="bg-gray-100 px-6 py-3 rounded-full hover:bg-gray-200 transition">
-              Loyihalarni ko'rish
+              <a href="/projects">Loyihalarni ko'rish</a>
             </button>
+          </div>
+          <div className="flex space-x-4">
+            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <Twitter className="w-6 h-6 text-blue-500 hover:text-blue-700" />
+            </a>
+            <a href="https://github.com/Alikuoff" target="_blank" rel="noopener noreferrer">
+              <Github className="w-6 h-6 text-gray-500 hover:text-gray-700" />
+            </a>
+            <a href="https://www.linkedin.com/in/aziz-alikulov-a35755294/" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="w-6 h-6 text-blue-500 hover:text-blue-700" />
+            </a>
+            <a href="https://instagram.com/justadzee" target="_blank" rel="noopener noreferrer">
+              <Instagram className="w-6 h-6 text-red-500 hover:text-red-700" />
+            </a>
           </div>
         </div>
         
@@ -28,7 +44,7 @@ const Hero = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-purple-100 rounded-full"></div>
             <img
-              src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=800"
+              src={profileImage}
               alt="Profile"
               className="rounded-full w-[500px] h-[500px] object-cover relative z-10"
             />

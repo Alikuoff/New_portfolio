@@ -12,9 +12,9 @@ const Navbar = () => {
 
   const navItems = [
     { path: '/', label: 'Bosh Sahifa' },
-    { path: '/skills', label: 'Mahoratlar' },
+    { path: '/skills', label: 'Ko\'nikmalarim' },
     { path: '/projects', label: 'Loyihalar' },
-    { path: '/about', label: 'Haqimda' },
+    { path: '/', label: 'Haqimda' },
   ];
 
   return (
