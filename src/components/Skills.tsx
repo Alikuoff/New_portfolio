@@ -42,7 +42,6 @@ const Skills = () => {
         { name: "FastAPI", proficiency: 50 },
       ]
     }
-  
   ];
 
   const [animation, setAnimation] = useState(false);
