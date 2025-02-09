@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import DarkModeToggle from './DarkMode';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const Navbar = () => {
   return (
     <nav className="w-full py-4 px-6 md:px-12 bg-white/80 backdrop-blur-sm fixed top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold">Alikulov.</Link>
+        <Link to="/" className="text-xl font-bold navbar-brand">Alikulov.</Link>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
@@ -35,13 +36,16 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Mobile Navigation Button */}
-        <button 
-          className="md:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        <div className="flex items-center space-x-4">
+          <DarkModeToggle />
+          {/* Mobile Navigation Button */}
+          <button 
+            className="md:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation Menu */}

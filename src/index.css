@@ -2,5 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
+body.dark-mode {
+  background-color: #09122C;
+  color: #ffffff;
+}
 
+body.dark-mode .text-black {
+  color: #ffffff;
+}
 
+body.dark-mode .text-white {
+  color: #000000;
+}
+
+body.dark-mode .bg-white {
+  background-color: #09122C;
+}
+
+body.dark-mode .bg-black {
+  background-color: #ffffff;
+}
+
+body.dark-mode footer {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Ensure all elements with specific classes are updated */
+body.dark-mode .bg-light {
+  background-color: #09122C;
+}
+
+body.dark-mode .bg-dark {
+  background-color: #ffffff;
+}
+
+body.dark-mode .text-light {
+  color: #000000;
+}
+
+body.dark-mode .text-dark {
+  color: #ffffff;
+}
+
+/* Change shadow color to white in dark mode */
+body.dark-mode .shadow {
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1), 0 1px 3px rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .shadow-lg {
+  box-shadow: 0 10px 15px rgba(255, 255, 255, 0.1), 0 4px 6px rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .shadow-md {
+  box-shadow: 0 6px 10px rgba(255, 255, 255, 0.1), 0 2px 4px rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .shadow-sm {
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(255, 255, 255, 0.08);
+}
+
+/* Change project button color to text-purple-600 and text to white in dark mode */
+body.dark-mode .project-button {
+  background-color: #6B46C1; /* Tailwind CSS class for text-purple-600 */
+  color: #ffffff;
+}
+
+/* Change Alikulov. text color to text-purple-600 in dark mode */
+body.dark-mode .navbar-brand {
+  color: #6B46C1; /* Tailwind CSS class for text-purple-600 */
+}

@@ -1,4 +1,5 @@
 import { Github, ExternalLink } from 'lucide-react';
+import tibxizmatImage from '../images/tibxizmat.png';
 
 interface Project {
   title: string;
@@ -12,28 +13,12 @@ interface Project {
 const Projects = () => {
   const projects: Project[] = [
     {
-      title: "E-Tijorat Dashboard",
-      description: "Onlayn do'kon operatsiyalarini boshqarish orzusi bilan real vaqtli analitikasi va inventar boshqarishini ta'minlaydigan keng qamrovli dashboard.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
-      githubUrl: "https://github.com/username/ecommerce-dashboard",
-      liveUrl: "https://ecommerce-dashboard.demo"
-    },
-    {
-      title: "Ob-havo App",
-      description: "Global ob-havo kuzatishini ta'minlaydigan real vaqtli ob-havo ilovasi, batafsil prognozlar va interaktiv xaritalar bilan.",
-      image: "https://images.unsplash.com/photo-1601134467661-3d775b999c8b?auto=format&fit=crop&q=80&w=800",
-      technologies: ["React", "OpenWeather API", "Chart.js"],
-      githubUrl: "https://github.com/username/weather-app",
-      liveUrl: "https://weather-app.demo"
-    },
-    {
-      title: "Muhimmat Boshqarish Tizimi",
-      description: "Haqiqiy vaqtli yangilanishlar va jamoa hamkorligi xususiyatlari bilan birgalikda ishlaydigan muhimmat boshqarish platformasi.",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
-      technologies: ["React", "Redux", "MongoDB", "Express"],
-      githubUrl: "https://github.com/username/task-manager",
-      liveUrl: "https://task-manager.demo"
+      title: "Tibxizmat_bot",
+      description: "Tibbiy xizmatlar haqida Telegram bot. Klinikalar ro‘yxati va xizmatlar haqida ma’lumot, eng yaqin va eng arzon klinikalarni topish, foydalanuvchi geolokatsiyasiga asoslangan klinika qidirish.",
+      image: tibxizmatImage,
+      technologies: ["React.js", "Node.js", "node-telegram-bot-api", "PostgreSQL", "Docker", "Fly.io", "Express.js"],
+      githubUrl: "https://github.com/Alikuoff/tib_xizmatbot",
+      liveUrl: "https://t.me/tibxizmat_bot"
     }
   ];
 
@@ -61,7 +46,7 @@ const Projects = () => {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 bg-white rounded-full hover:bg-gray-100 transition-colors"
+                    className="p-2 bg-white rounded-full hover:bg-gray-100 transition-colors dark:bg-gray-800 dark:hover:bg-gray-700"
                   >
                     <Github className="w-6 h-6" />
                   </a>
@@ -69,7 +54,7 @@ const Projects = () => {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 bg-white rounded-full hover:bg-gray-100 transition-colors"
+                    className="p-2 bg-white rounded-full hover:bg-gray-100 transition-colors dark:bg-gray-800 dark:hover:bg-gray-700"
                   >
                     <ExternalLink className="w-6 h-6" />
                   </a>
