@@ -25,7 +25,7 @@ const About = () => {
           </p>
         </div>
 
-        {/* Ish Tajrubi */}
+        {/* Ish Tajribam */}
         <div className="space-y-6">
           <h2 className="text-3xl font-bold">
             ISH TAJRUBASI<span className="text-purple-600">.</span>

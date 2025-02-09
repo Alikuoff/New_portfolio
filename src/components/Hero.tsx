@@ -20,7 +20,7 @@ const Hero = () => {
             <button className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">
               <a href="tel:+998883146777">Bog'lanish</a>
             </button>
-            <button className="bg-gray-100 px-6 py-3 rounded-full hover:bg-gray-200 transition">
+            <button className="bg-gray-100 px-6 py-3 rounded-full hover:bg-gray-200 transition project-button">
               <a href="/projects">Loyihalarni ko'rish</a>
             </button>
           </div>
