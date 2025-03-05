@@ -1,7 +1,5 @@
 import { Github, ExternalLink } from 'lucide-react';
 import tibxizmatImage from '../images/tibxizmat.png';
-import animehubImage from '../images/animehub.png';
-
 interface Project {
   title: string;
   description: string;
@@ -24,7 +22,7 @@ const Projects = () => {
     {
       title: "AnimeHub",
       description: "AnimeHub - bu Next.js, TypeScript, Tailwind CSS, shadcn/ui va Jikan API yordamida yaratilgan, Sevimli animelaringizni izlash va kuzatish uchun platforma.",
-      image: animehubImage,
+      image: "https://media.licdn.com/dms/image/v2/D4D12AQHQVipWU3-OQQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1705785937766?e=2147483647&v=beta&t=gKrSIkGXr92gVQbhmnnhYWpuLzP0v95CtZ9buSnASPc",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Jikan API"],
       githubUrl: "https://github.com/username/animehub",
       liveUrl: "https://animehub-uz.netlify.app/"
