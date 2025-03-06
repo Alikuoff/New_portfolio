@@ -26,6 +26,18 @@ const Projects = () => {
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Jikan API"],
       githubUrl: "https://github.com/username/animehub",
       liveUrl: "https://animehub-uz.netlify.app/"
+    },
+    {
+      title: "KriptoBozor",
+      description: "Kriptovalyuta bozori veb-sayti Next.js 14, TypeScript, Tailwind CSS, shadcn/ui va CoinGecko API yordamida yaratilgan. Ushbu platforma kriptovalyuta narxlari va bozor ma'lumotlarini kuzatish uchun mo'ljallangan.",
+      image: "https://forkast.news/wp-content/uploads/2021/11/bitcoin-trend-price-bear-or-bull-movement-analysis-2021-08-28-11-29-11-utc-1260x840.jpg",
+      technologies: [
+        "Next.js 14", "TypeScript", "Tailwind CSS", "shadcn/ui", "Framer Motion",
+        "Chart.js", "react-chartjs-2", "chartjs-chart-financial", "chartjs-adapter-date-fns",
+        "Lucide React", "next-themes", "class-variance-authority", "clsx", "date-fns", "Radix UI", "CoinGecko API"
+      ],
+      githubUrl: "https://github.com/username/kriptobozor",
+      liveUrl: "https://kriptobozor.demo"
     }
   ];
 
