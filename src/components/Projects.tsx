@@ -37,7 +37,7 @@ const Projects = () => {
         "Lucide React", "next-themes", "class-variance-authority", "clsx", "date-fns", "Radix UI", "CoinGecko API"
       ],
       githubUrl: "https://github.com/username/kriptobozor",
-      liveUrl: "https://kriptobozor.demo"
+      liveUrl: "https://crpto-prices.netlify.app/"
     }
   ];
 
