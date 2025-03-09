@@ -1,5 +1,8 @@
 import { Github, ExternalLink } from 'lucide-react';
 import tibxizmatImage from '../images/tibxizmat.png';
+import animehubImage from '../images/animehub.png';
+import kriptobozorImage from '../images/kriptobozor.png';
+
 interface Project {
   title: string;
   description: string;
@@ -22,10 +25,22 @@ const Projects = () => {
     {
       title: "AnimeHub",
       description: "AnimeHub - bu Next.js, TypeScript, Tailwind CSS, shadcn/ui va Jikan API yordamida yaratilgan, Sevimli animelaringizni izlash va kuzatish uchun platforma.",
-      image: "https://media.licdn.com/dms/image/v2/D4D12AQHQVipWU3-OQQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1705785937766?e=2147483647&v=beta&t=gKrSIkGXr92gVQbhmnnhYWpuLzP0v95CtZ9buSnASPc",
+      image: animehubImage,
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Jikan API"],
       githubUrl: "https://github.com/username/animehub",
       liveUrl: "https://animehub-uz.netlify.app/"
+    },
+    {
+      title: "KriptoBozor",
+      description: "Kriptovalyuta bozori veb-sayti Next.js 14, TypeScript, Tailwind CSS, shadcn/ui va CoinGecko API yordamida yaratilgan. Ushbu platforma kriptovalyuta narxlari va bozor ma'lumotlarini kuzatish uchun mo'ljallangan.",
+      image: "https://forkast.news/wp-content/uploads/2021/11/bitcoin-trend-price-bear-or-bull-movement-analysis-2021-08-28-11-29-11-utc-1260x840.jpg",
+      technologies: [
+        "Next.js 14", "TypeScript", "Tailwind CSS", "shadcn/ui", "Framer Motion",
+        "Chart.js", "react-chartjs-2", "chartjs-chart-financial", "chartjs-adapter-date-fns",
+        "Lucide React", "next-themes", "class-variance-authority", "clsx", "date-fns", "Radix UI", "CoinGecko API"
+      ],
+      githubUrl: "https://github.com/username/kriptobozor",
+      liveUrl: "https://kriptobozor.demo"
     }
   ];
 
